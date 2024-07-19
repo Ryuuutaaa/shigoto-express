@@ -13,9 +13,7 @@ app.get("/hello", (req, res) => {
 
 // routes / url / endpoint menggunakan methond POST
 app.post("/login", (req, res) => {
-  if (req.name === "rafi") {
-    res.send("Login telah berhasil");
-  }
+  res.send("Login telah berhasil");
 });
 
 app.listen(port, () => {
